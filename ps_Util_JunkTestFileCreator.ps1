@@ -36,7 +36,7 @@ write-host "Junk file creator - can be used for baseline network copy tests" -fo
 
 write-host ""
 
-# If the size 
+# If the size has not been entered by the script arguments
 if($iJunkFileSize -eq 0) {
 	Try {
 		[int]$iJunkFileSize = read-host "Enter the size of the junk file (as a number in MB)"
@@ -61,8 +61,8 @@ Else {
 	$iJunkFileSizeBytes = $iJunkFileSize * 1024 * 1024 # Convert the size from MB to bytes
 
 	# Set the file path
-		
 	if($JunkFileName.length -eq 0) {
+		$bFileNameValid = $True
 		$sDestFile = $PSScriptRoot + "\JunkTestFile_" + $iJunkFileSize + "MB.txt"
 	}
 	Else {
