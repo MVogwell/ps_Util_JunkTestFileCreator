@@ -9,6 +9,7 @@ This is a powershell script to create a text file of a specific MB size.
 Parameters:
 
 -JunkFileSizeMB	= Optional. Integer. The size of the junk file to create in MB
+
 -JunkFileName	= Optional. String. Set a custom file name (otherwise JunkTestFile_<size>MB.txt will be used)
 	
 ## Motivation
