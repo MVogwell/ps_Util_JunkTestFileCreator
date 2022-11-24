@@ -2,7 +2,7 @@
 #
 # Generate junk test files
 #
-# MVogwell - March 2018
+# MVogwell - Nov 2022 - v1.1
 #
 #
 
@@ -57,7 +57,6 @@ Catch {
 
 	Write-Output "`t--- $sErrMsg `n"
 }
-Finally {}
 
 # If the file path is valid then generate the contents of the file
 if ($bFileValid) {
